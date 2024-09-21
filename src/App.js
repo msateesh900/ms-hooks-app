@@ -1,33 +1,33 @@
-import React, { useState } from "react";
-import "./App.css";
-import ReactuseState from "./components/ReactuseState/ReactuseStateHook";
-import DataFetchReactuseEffectHook from "./components/ReactuseEffect/DataFetchReactuseEffectHook";
-import ReactuseStateObjectHook from "./components/ReactuseState/ReactuseStateObjectHook";
-import ReactuseStateArrayHook from "./components/ReactuseState/ReactuseStateArrayHook";
-import ReactuseEffectAfterRender from "./components/ReactuseEffect/ReactuseEffectAfterRender";
-import ConditionalReactuseEffect from "./components/ReactuseEffect/ConditionalReactuseEffect";
-import RunReactuseEffectOnlyOnce from "./components/ReactuseEffect/RunReactuseEffectOnlyOnce";
-import CleanupWithReactuseEffect from "./components/ReactuseEffect/CleanupWithReactuseEffect";
-import ReactuseEffectWithDifferentDepenedencies from "./components/ReactuseEffect/ReactuseEffectWithDifferentDepenedencies";
-import DataFetchingWIthReactuseEffectWithSpecificID from "./components/ReactuseEffect/DataFetchingWIthReactuseEffectWithSpecificID";
-import CommunicationusingReactuseContextHook from "./components/ReactuseContext/BasicUseCase/CommunicationusingReactuseContextHook";
-import SimpleCountUsingReactuseReducer from "./components/ReactuseReducer/SimpleCountUsingReactuseReducer";
-import ComplexCountUsingReactuseReducerHook from "./components/ReactuseReducer/ComplexCountUsingReactuseReducerHook";
-import SimpleCountUsingMultipleReducers from "./components/ReactuseReducer/SimpleCountUsingMultipleReducers";
-import ReactuseReducerWithuseContextHook from "./components/ReactuseReducerWithuseContext/ReactuseReducerWithuseContextHook";
-import DataFetchingUsinguseStateAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseStateAnduseEffect";
-import DataFetchingUsinguseReducerAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseReducerAnduseEffect";
-import ReactuseCallBackHook from "./components/ReactuseCallBackHook/ReactuseCallBackHook";
-import PerformanceOptimizationUsingReactuseMemoHook from "./components/ReactuseMemo/PerformanceOptimizationUsingReactuseMemoHook";
-import ReactuseRefToFocusInput from "./components/ReactuseRef/ReactuseRefToFocusInput";
-import ReactuseRefUsageInTimer from "./components/ReactuseRef/ReactuseRefUsageInTimer";
-import ReactuseDocumentTitleCustomHookUsage from "./components/CustomHooks/ReactuseDocumentTitleCustomHook/ReactuseDocumentTitleCustomHookUsage";
-import ReactuseCounterCustomHook from "./components/CustomHooks/ReactuseCounterCustomHook/ReactuseCounterCustomHook";
+import React, { useState } from "react"
+import "./App.css"
+import ReactuseState from "./components/ReactuseState/ReactuseStateHook"
+import DataFetchReactuseEffectHook from "./components/ReactuseEffect/DataFetchReactuseEffectHook"
+import ReactuseStateObjectHook from "./components/ReactuseState/ReactuseStateObjectHook"
+import ReactuseStateArrayHook from "./components/ReactuseState/ReactuseStateArrayHook"
+import ReactuseEffectAfterRender from "./components/ReactuseEffect/ReactuseEffectAfterRender"
+import ConditionalReactuseEffect from "./components/ReactuseEffect/ConditionalReactuseEffect"
+import RunReactuseEffectOnlyOnce from "./components/ReactuseEffect/RunReactuseEffectOnlyOnce"
+import CleanupWithReactuseEffect from "./components/ReactuseEffect/CleanupWithReactuseEffect"
+import ReactuseEffectWithDifferentDepenedencies from "./components/ReactuseEffect/ReactuseEffectWithDifferentDepenedencies"
+import DataFetchingWIthReactuseEffectWithSpecificID from "./components/ReactuseEffect/DataFetchingWIthReactuseEffectWithSpecificID"
+import CommunicationusingReactuseContextHook from "./components/ReactuseContext/BasicUseCase/CommunicationusingReactuseContextHook"
+import SimpleCountUsingReactuseReducer from "./components/ReactuseReducer/SimpleCountUsingReactuseReducer"
+import ComplexCountUsingReactuseReducerHook from "./components/ReactuseReducer/ComplexCountUsingReactuseReducerHook"
+import SimpleCountUsingMultipleReducers from "./components/ReactuseReducer/SimpleCountUsingMultipleReducers"
+import ReactuseReducerWithuseContextHook from "./components/ReactuseReducerWithuseContext/ReactuseReducerWithuseContextHook"
+import DataFetchingUsinguseStateAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseStateAnduseEffect"
+import DataFetchingUsinguseReducerAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseReducerAnduseEffect"
+import ReactuseCallBackHook from "./components/ReactuseCallBackHook/ReactuseCallBackHook"
+import PerformanceOptimizationUsingReactuseMemoHook from "./components/ReactuseMemo/PerformanceOptimizationUsingReactuseMemoHook"
+import ReactuseRefToFocusInput from "./components/ReactuseRef/ReactuseRefToFocusInput"
+import ReactuseRefUsageInTimer from "./components/ReactuseRef/ReactuseRefUsageInTimer"
+import ReactuseDocumentTitleCustomHookUsage from "./components/CustomHooks/ReactuseDocumentTitleCustomHook/ReactuseDocumentTitleCustomHookUsage"
+import ReactuseCounterCustomHook from "./components/CustomHooks/ReactuseCounterCustomHook/ReactuseCounterCustomHook"
 
-export const userContext = React.createContext();
+export const userContext = React.createContext()
 
 export default function App() {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState("")
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -39,7 +39,7 @@ export default function App() {
       <p>Count:{state}</p> */}
       <userContext.Provider value={{ user, setUser }}>
         {/* Normal usecase for useStateHook */}
-        <ReactuseState />
+        {/* <ReactuseState /> */}
         <hr />
         {/* Object useCase for React useState Hook */}
         <ReactuseStateObjectHook />
@@ -54,7 +54,7 @@ export default function App() {
           onChange={(e) => setUser(e.target.value)}
           placeholder="Enter username"
         />
-        <DataFetchReactuseEffectHook />
+        {/* <DataFetchReactuseEffectHook /> */}
         <hr />
         {/* <ReactuseEffectAfterRender />
         <hr />
@@ -86,6 +86,7 @@ export default function App() {
         <hr />
         <PerformanceOptimizationUsingReactuseMemoHook />
         <hr />
+        */}
         <ReactuseRefToFocusInput />
         <hr />
         <ReactuseRefUsageInTimer />
@@ -93,8 +94,8 @@ export default function App() {
         <ReactuseDocumentTitleCustomHookUsage />
         <hr />
         <ReactuseCounterCustomHook />
-        <br /> */}
+        <br />
       </userContext.Provider>
     </div>
-  );
+  )
 }
